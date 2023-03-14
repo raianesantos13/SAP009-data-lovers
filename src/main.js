@@ -1,6 +1,15 @@
-import { example } from './data.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+import { ordenar, preencherModal, filtroProdutor, filtroDiretor,
+ calculo} from "./data.js";
+
+import data from "./data/ghibli/ghibli.json"
+
+const ghibliInfo = data;
+
 
 console.log(example, data);
+
+const btn = document.querySelector("#back-to-top");
+
+btn.addEventListener("click", function(){
+    window.scrollTo(0, 0);
+});

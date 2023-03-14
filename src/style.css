@@ -30,22 +30,25 @@ header{
     margin-bottom: 20px;
 }
 
-<<<<<<< HEAD
 .position{
     background-color:aquamarine;
+    border-color: #785782;
 }
 
 .order{
     background-color:blueviolet;
+    border-color: #785782;
 }
 
 h1{
     text-align:center;
 }
-=======
-#back-to-top {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-}
->>>>>>> d1fe6723120cf987b108a26142118b34b10fe3c0
+
+    #back-to-top {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        cursor: pointer;
+        border-color: #4c0761;
+        border-radius: 10%;
+      }
