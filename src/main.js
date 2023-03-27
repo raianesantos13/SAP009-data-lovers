@@ -1,9 +1,9 @@
-import { ordenar, preencherModal, filtroProdutor, filtroDiretor,
- calculo} from "./data.js";
-
-import data from "./data/ghibli/ghibli.json"
+import data from "./data/ghibli/ghibli.js"
 
 const ghibliInfo = data;
+console.log (ghibliInfo.films[0].description);
+
+
 
 
 console.log(example, data);
