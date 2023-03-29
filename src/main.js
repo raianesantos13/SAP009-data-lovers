@@ -5,7 +5,6 @@ console.log (ghibliInfo.films[0].description);
 
 
 
-
 console.log(example, data);
 
 const btn = document.querySelector("#back-to-top");
