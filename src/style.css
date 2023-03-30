@@ -2,20 +2,20 @@ header {
     padding: 50px;
     text-align: center;
     background: #652777;
-    color: white;
+    color: rgb(2, 60, 92);
     font-size: large;
   }
 
 
 body {
-    background-color: #785782;
-    background-image: url(https://i.pinimg.com/originals/12/81/bf/1281bfcd33300e98beb01d60bd3f3556.png);
+    background-color: #8f8c91;
+    background-image: url(https://raw.githubusercontent.com/marinamassaneiro/Data-lovers/main/src/img/dragon-chihiro1.png);
     background-position: right;
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed, scroll;
     background-origin: content-box;
-    font-size: 15px;;
-    color:rgb(255, 255, 255);
+    font-size: 20px;;
+    color:rgb(79, 142, 176);
    font-family: 'Lato', sans-serif;
 
 }
@@ -39,7 +39,7 @@ header{
 }
 
 h1{
-    text-align:center;
+    text-align:left;
 }
 
 .div-btn {
@@ -66,10 +66,6 @@ h1{
     background-color: aquamarine;
     color: #e26c7a;
   }
-
-
-
-
 
   .logo{
     margin-left: 180px;
@@ -135,11 +131,11 @@ input{
     flex-wrap: wrap;
 }
 
+
 .cardGhibli{
 	list-style: none;
 	padding: 40px;
-	color: #222;
-    border-radius: 20px;
+	color: #000000;
     background: rgba(19, 18, 21, 0.747);
     width: 13vw;
     height: 300px;
@@ -166,7 +162,7 @@ input{
 
 .card-descrição{
     color: #dba3b0;
-    font-size: 68%;
+    font-size: 70%;
     margin-top: 8px;
 }
 
@@ -299,3 +295,17 @@ footer{
     box-shadow: inset 0 0 1em rgb(0, 208, 255), 0 0 1em rgb(250, 123, 225);
 }
     
+.listacuriosidades{
+    width: 15vw;
+    height: 150px;
+    padding: 1%;
+    flex-direction: column;
+    display: flex;
+    color: #081c47;
+    font-size: 100%;
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 20%;
+    justify-content: center;
+    box-shadow: inset 0 0 1em #04335a, 0 0 1em rgb(25, 71, 128);
+}
