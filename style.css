@@ -1,0 +1,580 @@
+header {
+    padding: 50px;
+    text-align: center;
+    background: #652777;
+    color: rgb(2, 60, 92);
+    font-size: large;
+  }
+
+
+body {
+    background-color: #8f8c91;
+    background-image: url(https://raw.githubusercontent.com/marinamassaneiro/Data-lovers/main/src/img/dragon-chihiro1.png);
+    background-position: right;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, scroll;
+    background-origin: content-box;
+    font-size: 20px;;
+    color:rgb(79, 142, 176);
+   font-family: 'Lato', sans-serif;
+
+}
+
+header{
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    padding-top: 3%;
+    margin-bottom: 20px;
+}
+
+.position{
+    background-color: #dba3b0;
+}
+
+.order{
+    background-color: #dba3b0;
+}
+
+h1{
+    text-align:left;
+}
+
+.div-btn {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 3vw 0 0 -1.5vw;
+    padding: 0 2vw;
+    column-gap: 1vw;
+  }
+
+  .btn {
+    background-color: var(--background-items);
+    margin: 0;
+    padding: 0.5vw 1vw;
+    border-radius: 0.3vw;
+    cursor: pointer;
+    color: var(--color-font);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: aquamarine;
+    color: #e26c7a;
+  }
+
+  .logo{
+    margin-left: 180px;
+}
+
+a{
+    color: #dba3b0; 
+}
+
+.Menu{  
+    color: black;
+    display: flex;
+    margin-left: auto;
+}
+
+select {
+    font-size: 16px ;
+    margin: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    height: 25px;
+    background:  #dba3b0;
+}
+
+select:hover{
+    text-shadow: 
+    0px 0px 10px #9B59B6,
+    0px 0px 20px #9B59B6,
+    0px 0px 30px #9B59B6;
+}
+
+input{
+    font-size: 16px ;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    background:  #dba3b0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: fixed;
+}
+
+.filtermenu{
+    display: flex;
+    margin-top: 40px;
+    align-content: left;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    flex-direction:column;
+}
+
+.listaImpressa{
+    text-align: center;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.cardGhibli{
+	list-style: none;
+	padding: 40px;
+	color: #000000;
+    background: rgba(19, 18, 21, 0.747);
+    width: 13vw;
+    height: 300px;
+    margin: 10px;
+    padding: 1%;
+    flex-direction: column;
+    display: flex;
+    perspective: 1000px;
+}
+
+.card-titulo{
+    color: #dba3b0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 100%;
+    margin-top: 10px;
+}
+
+.card-lançamento{
+    color: #dba3b0;
+    font-size: 60%;
+}
+
+.card-descrição{
+    color: #dba3b0;
+    font-size: 70%;
+    margin-top: 8px;
+}
+
+.card-diretor{
+    color: #dba3b0;
+    font-size: 60%;
+    margin-top: 10px;
+}
+.card-producer{
+    color: #dba3b0;
+    font-size: 60%;
+}
+.card-avaliação{
+    color: #dba3b0;
+    font-size: 60%;
+}
+
+/*PERSONAGENS*/
+
+.listaPersonagem{
+    text-align: center;
+    display: inline-block;
+    margin-left: 10%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.cardPersonagem{
+	list-style: none;
+	padding: 40px;
+    border-radius: 20px;
+    background: rgba(19, 18, 21, 0.747);
+    width: 13vw;
+    height: 300px;
+    margin: 10px;
+    padding: 1%;
+    flex-direction: column;
+    display: flex;
+    color: #dba3b0;
+    font-size: 80%;
+    margin-top: 20px;
+    perspective: 1000px;
+}
+.card-personagens{
+    color: #dba3b0;
+    font-size: 60%;
+    font-size: 165%;
+    margin-top: 50px;
+}
+
+footer{
+    color: black;
+    font-weight:bolder;
+    text-align: center;
+    margin-top: 25px;
+    margin-block-end: 25px;
+}
+
+/*FLIP FILMES*/
+.cardGhibli .flip{
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.cardGhibli:hover .flip{
+    transform: rotateY(180deg);
+}
+
+.front-card, .back-card{
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Safari */
+    -ms-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back-card{
+    transform: rotateY(180deg);
+}
+
+.front-card img, .back-card{
+    width: 13vw;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,  0.3);
+    box-shadow: inset 0 0 1em rgb(0, 208, 255), 0 0 1em rgb(250, 123, 225);
+}
+
+.card-poster, .card-img{
+    border-radius: 20px;
+    justify-content: center;
+    object-fit: fill;   /*ajuste do tamanho das imagens*/
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+}
+
+/*FLIP PERSONAGENS*/
+
+.cardPersonagem .flipPersonagens{
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+    
+.cardPersonagem:hover .flipPersonagens{
+    transform: rotateY(180deg);
+}
+    
+.front-personagens, .back-personagens{
+    position:absolute;
+    backface-visibility:hidden;
+    -webkit-backface-visibility: hidden; /* Safari */
+    -ms-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+    
+.back-personagens{
+    transform: rotateY(180deg);
+}
+    
+.front-personagens img, .back-personagens{
+    width: 13vw;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,  0.3);
+    box-shadow: inset 0 0 1em rgb(0, 208, 255), 0 0 1em rgb(250, 123, 225);
+}
+    
+.listacuriosidades{
+    width: 15vw;
+    height: 150px;
+    padding: 1%;
+    flex-direction: column;
+    display: flex;
+    color: #081c47;
+    font-size: 100%;
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 20%;
+    justify-content: center;
+    box-shadow: inset 0 0 1em #04335a, 0 0 1em rgb(25, 71, 128);
+}
+
+@media (max-width:1045px){
+
+    
+    h1{
+        margin-left: auto;
+        font-size: 50px;
+    }
+    
+    .logo{
+        margin-left: auto;
+    }
+
+    .listaImpressa{
+        margin-left: 5%;
+    }
+    .listaPersonagem{
+        margin-left: 5%;
+    }
+
+    .cardGhibli{
+        width: 18vw;
+        height: 30vh;
+    }
+
+    .front-card img, .back-card{
+        width: 18vw;
+        height: 30vh;
+    }
+    
+    .cardPersonagem{
+        width: 18vw;
+        height: 30vh;
+        
+    }
+    .front-personagens img, .back-personagens{
+        width: 18vw;
+        height: 30vh;
+    }
+    
+    .listacuriosidades{
+        width: 50vw;      
+        height: 25vh;
+        margin-left: 24%;
+    }
+   
+  }
+
+/*===============TABLETS===========================*/
+@media (min-width:481px) and (max-width:768px){
+
+    .navbar-container{
+        padding: 15px;
+    }
+    h1{
+        margin-left: auto;
+        font-size: 23px;
+    }
+    .logo{
+        margin-left: auto;
+    }
+
+    input, button{
+        margin-left:auto;
+    }
+
+    .listaImpressa {
+        margin-left: 5%;
+    }
+    
+    .listaPersonagem{
+        margin-left: 5%;
+    }
+    .cardGhibli{
+        width: 25vw;    /*ajuste dos cards*/
+        height: 30vh;
+    }
+    .front-card img, .back-card{
+        width: 25vw;    
+        height: 30vh;
+    }
+    
+    .card-titulo{
+        font-size: 100%;
+        margin-top: 10px;
+    }
+    
+    .cardPersonagem{
+        width: 25vw;    
+        height: 30vh;
+         
+    }
+    .front-personagens img, .back-personagens{
+        width: 25vw;    
+        height: 30vh;
+    }
+    .listacuriosidades{
+        width: 55vw;      
+        height: 25vh;
+        margin-left: 24%;
+    }
+}
+
+
+/*================CELULARES============*/
+@media screen and (max-width: 480px){
+
+    body {
+        background-image: none;
+        background: #dba3b0/* rgb(242, 204, 211)*/;
+    }
+
+    a{
+        color: black; 
+    }
+
+    .navbar-container{
+        padding: 5px;
+    }
+    h1{
+        margin-left: auto;
+        font-size: 20px;
+    }
+    
+    .logo{
+        margin-left: auto;
+    }
+
+    input, button{
+        margin-left: 14%;
+    }
+    .listaImpressa {
+        margin-left: 13%;
+    }
+    
+    .listaPersonagem{
+        margin-left: 13%;
+    }
+
+    .cardGhibli {
+        width: 70vw;    /*ajuste dos cards*/
+        height: 30vh; 
+    }
+    
+    .front-card img, .back-card{
+        width: 70vw;
+        height: 30vh;
+    }
+    
+    .cardPersonagem{
+        width: 70vw;      /*ajuste dos cards*/
+        height: 30vh;
+    }
+    .front-personagens img, .back-personagens{
+        width: 70vw;
+        height: 30vh;
+    }
+    .listacuriosidades{
+        width: 70vw;      
+        height: 30vh;
+        margin-left: 14%;
+    }
+}
+
+
+/*RESPONSIVIDADE*/
+
+@media (max-width:1045px){
+
+    
+    h1{
+        margin-left: auto;
+        font-size: 50px;
+    }
+    
+    .logo{
+        margin-left: auto;
+    }
+
+    .listaImpressa{
+        margin-left: 5%;
+    }
+    .listaPersonagem{
+        margin-left: 5%;
+    }
+
+    .cardGhibli{
+        width: 18vw;
+        height: 30vh;
+    }
+
+    .front-card img, .back-card{
+        width: 18vw;
+        height: 30vh;
+    }
+    
+    .cardPersonagem{
+        width: 18vw;
+        height: 30vh;
+        
+    }
+    .front-personagens img, .back-personagens{
+        width: 18vw;
+        height: 30vh;
+    }
+    
+    .listacuriosidades{
+        width: 50vw;      
+        height: 25vh;
+        margin-left: 24%;
+    }
+   
+  }
+
+/*TABLETS*/
+@media (min-width:481px) and (max-width:768px){
+
+    .navbar-container{
+        padding: 15px;
+    }
+    h1{
+        margin-left: auto;
+        font-size: 23px;
+    }
+    .logo{
+        margin-left: auto;
+    }
+
+    input, button{
+        margin-left:auto;
+    }
+
+    .listaImpressa {
+        margin-left: 5%;
+    }
+    
+    .listaPersonagem{
+        margin-left: 5%;
+    }
+    .cardGhibli{
+        width: 25vw;    
+        height: 30vh;
+    }
+    .front-card img, .back-card{
+        width: 25vw;    
+        height: 30vh;
+    }
+    
+    .card-titulo{
+        font-size: 100%;
+        margin-top: 10px;
+    }
+    
+    .cardPersonagem{
+        width: 25vw;    
+        height: 30vh;
+         
+    }
+    .front-personagens img, .back-personagens{
+        width: 25vw;    
+        height: 30vh;
+    }
+    .listacuriosidades{
+        width: 55vw;      
+        height: 25vh;
+        margin-left: 24%;
+    }
+}
+
