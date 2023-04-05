@@ -39,7 +39,7 @@ Como fã do Studio achei interessante fazer um site no qual pessoas que querem c
 
 ## 4. Ferramentas utilizadas
    - VSCODE
-   - GIT
+   - GIT e GITHUB
    - HTML
    - CSS
    - JAVASCRIPT
